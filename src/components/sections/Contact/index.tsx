@@ -140,7 +140,7 @@ export const Contact = () => {
             </Button>
           </form>
         </div>
-        <div>
+        <div className='hidden lg:block'>
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold mb-2">Get In Touch</h3>

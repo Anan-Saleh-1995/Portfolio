@@ -6,7 +6,7 @@ export const About = () => {
     <SectionWrapper id={'about'} title={about.title}>
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         {about.paragraphs.map((text, i) => (
-          <p key={i}>{text}</p>
+          <p key={i} className='mb-2'>{text}</p>
         ))}
       </div>
     </SectionWrapper>

@@ -3,13 +3,13 @@ import type { ExperienceTypes, SocialLink } from '@/lib/types';
 
 export const about = {
   title: 'About Me',
-  paragraphs: [
-    'I’m Anan Saleh, a full-stack developer who enjoys turning ideas into working products.',
-    'My journey has been shaped by constant curiosity — from experimenting with small projects to building complete applications.',
-    'I care about details, clean structure, and the feeling of flow when code and design come together.',
-    'Outside of coding challenges and portfolio projects, I’m always looking for ways to improve how I build, learn, and share my work.',
-  ],
+  paragraphs:[`
+  I’m a fullstack JavaScript developer with expertise in React and Node.js and over three years of experience building web applications, I enjoy working both on front-end and back-end be it figma designs or writing a docker file that will run my project on AWS EC2.`,
+  'Learning new tech or a software language has always excited me and currently expanding my knowledge and experience with languages such as but not limited to php, C#.',
+  'I’m always about micro improvement with a bigger picture in mind that allows me to reach my goals in any field not just programming ',
+  'I’m currently working on side projects along side this portfolio and testing out new techs and languages both on front-end and back-end']
 };
+
 
 export const experiences: ExperienceTypes[] = [
   {
@@ -18,8 +18,10 @@ export const experiences: ExperienceTypes[] = [
     company: 'PlasBit Ltd',
     period: '2022 – 2025',
     location: 'Yokneam, Israel',
-    description: 'At PlasBit I worked as a full stack developer, building web applications with React and Node.js. Most of my time was spent coding in JavaScript, integrating APIs, and shaping the frontend with Figma designs. Along the way, I reviewed code from outsourced developers to keep things consistent and maintainable.',
-    tech: ['React', 'Nodejs', 'MongoDB', 'JavaScript', 'AWS', 'Figma'],
+    description: `At PlasBit I worked as a full stack developer, building applications with React on the frontend and Node.js on the backend.
+     I had the chance to dive into both sides of development — creating user-friendly interfaces and wiring them up with APIs, server logic, and MongoDB.
+     I collaborated closely with designers to bring Figma designs to life, worked with the SEO team to improve visibility, and coordinated with DevOps on AWS services like EC2 and S3. It was a role that gave me a full picture of how products move from idea to deployment.`,
+    tech: ['React', 'Nodejs', 'MongoDB', 'JavaScript', 'AWS', 'Figma', 'git'],
   },
 ];
 
