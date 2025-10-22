@@ -4,7 +4,7 @@ import { socials } from '@/lib/data';
 
 export const SocialLinks = () => {
 
-  const onClick = (e) => {
+  const onClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     toast.info('Coming Soon - Under Construction');
   };
