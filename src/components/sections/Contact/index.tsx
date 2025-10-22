@@ -124,7 +124,11 @@ export const Contact = () => {
                 autoComplete="off"
               />
             </div>
-            <Button type="submit" className="bg-emerald-500 hover:bg-emerald-600 hover:cursor-pointer">
+            <Button
+              disabled={loading}
+              type="submit"
+              className="bg-emerald-500 hover:bg-emerald-600 hover:cursor-pointer"
+            >
               {loading ? (
                 <>
                   <Spinner className="mr-2 h-4 w-4 animate-spin" />
