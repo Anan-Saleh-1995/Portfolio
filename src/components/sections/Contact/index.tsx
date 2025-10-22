@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { Spinner } from '@/components/ui/spinner';
 import { toast } from 'sonner';
 import { SectionWrapper } from '@/components/common/SectionWrapper';
 import { sendEmail } from '@/lib/services/email/send';
@@ -61,7 +62,12 @@ export const Contact = () => {
         message: form.message,
       };
       await sendEmail(paramsToSend);
-      setForm({ name: '', email: '', message: '', website: '' });
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+        website: ''
+      });
     } catch (error) {
       toast.error('Something went wrong. Please try again later.');
     } finally {
@@ -119,7 +125,14 @@ export const Contact = () => {
               />
             </div>
             <Button type="submit" className="bg-emerald-500 hover:bg-emerald-600 hover:cursor-pointer">
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? (
+                <>
+                  <Spinner className="mr-2 h-4 w-4 animate-spin" />
+                  On its way...
+                </>
+              ) : (
+                'Let\'s Connect'
+              )}
             </Button>
           </form>
         </div>
