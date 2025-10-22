@@ -10,3 +10,21 @@ export const THEME = {
   LIGHT: 'light',
   SYSTEM: 'system',
 } as const;
+
+export const TECH_STACK = {
+  REACT: 'react',
+  VITE: 'vite',
+  JAVASCRIPT: 'javascript',
+  TYPESCRIPT: 'typescript',
+  TAILWIND: 'tailwind',
+  SHADCN: 'shadcn',
+  NODEJS: 'nodejs',
+  MONGODB: 'mongodb',
+  AWS: 'aws',
+  FIGMA: 'figma',
+  GIT: 'git',
+  GITHUB: 'github',
+  VERCEL: 'vercel',
+  JIRA: 'jira',
+  BITBUCKET: 'bitbucket',
+} as const;

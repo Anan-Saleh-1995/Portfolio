@@ -23,7 +23,7 @@ export type ExperienceTypes = {
   period: string
   location: string
   description: string,
-  tech: string[]
+  techStack: string[]
 };
 
 export type Project = {

@@ -1,5 +1,6 @@
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import type { ExperienceTypes, SocialLink } from '@/lib/types';
+import { TECH_STACK } from '@/lib/utils';
 
 export const about = {
   title: 'About Me',
@@ -21,7 +22,17 @@ export const experiences: ExperienceTypes[] = [
     description: `At PlasBit I worked as a full stack developer, building applications with React on the frontend and Node.js on the backend.
      I had the chance to dive into both sides of development — creating user-friendly interfaces and wiring them up with APIs, server logic, and MongoDB.
      I collaborated closely with designers to bring Figma designs to life, worked with the SEO team to improve visibility, and coordinated with DevOps on AWS services like EC2 and S3. It was a role that gave me a full picture of how products move from idea to deployment.`,
-    tech: ['React', 'Nodejs', 'MongoDB', 'JavaScript', 'AWS', 'Figma', 'git'],
+    techStack: [
+      TECH_STACK.REACT,
+      TECH_STACK.NODEJS,
+      TECH_STACK.MONGODB,
+      TECH_STACK.JAVASCRIPT,
+      TECH_STACK.AWS,
+      TECH_STACK.FIGMA,
+      TECH_STACK.GIT,
+      TECH_STACK.JIRA,
+      TECH_STACK.BITBUCKET
+    ],
   },
 ];
 
@@ -31,19 +42,28 @@ export const projects = [
     title: 'Password Generator',
     description: 'A tool that generates random password',
     img: 'images/password-generator.png',
-    techStack: ['react', 'typescript', 'vite', 'shadcn', 'tailwind', 'vercel'],
+    techStack: [
+      TECH_STACK.REACT,
+      TECH_STACK.TYPESCRIPT,
+      TECH_STACK.VITE,
+      TECH_STACK.SHADCN,
+      TECH_STACK.TAILWIND,
+      TECH_STACK.VERCEL,
+      TECH_STACK.GIT,
+      TECH_STACK.GITHUB
+    ],
     github: 'https://github.com/Anan-Saleh-1995/Password-Generator',
     liveDemo: 'https://password-generator-self-tau.vercel.app/',
   },
-  {
-    id: 2,
-    title: 'Movies App',
-    description: 'A Website for Movies and TV shows, users can add to their watchlist movies',
-    img: 'images/password-generator.png',
-    techStack: ['react', 'typescript', 'vite', 'shadcn', 'tailwind', 'vercel'],
-    github: 'https://github.com/Anan-Saleh-1995/Password-Generator',
-    liveDemo: 'https://password-generator-self-tau.vercel.app/',
-  }
+  // {
+  //   id: 2,
+  //   title: 'Movies App',
+  //   description: 'A Website for Movies and TV shows, users can add to their watchlist movies',
+  //   img: 'images/password-generator.png',
+  //   techStack: ['react', 'typescript', 'vite', 'shadcn', 'tailwind', 'vercel'],
+  //   github: 'https://github.com/Anan-Saleh-1995/Password-Generator',
+  //   liveDemo: 'https://password-generator-self-tau.vercel.app/',
+  // }
 ];
 
 export const socials: SocialLink[] = [

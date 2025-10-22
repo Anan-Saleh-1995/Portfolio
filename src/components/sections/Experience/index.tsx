@@ -34,7 +34,7 @@ export const Experience = () => {
             </p>
             <div className="flex flex-wrap gap-2 mt-2">
               {
-                exp.tech.map((tech) => (
+                exp.techStack.map((tech) => (
                   <Badge key={tech} className="hover:cursor-pointer hover:bg-emerald-400 hover:dark:text-emerald-400 hover:dark:bg-accent" variant={'secondary'}>{tech}</Badge>
                 ))
               }
