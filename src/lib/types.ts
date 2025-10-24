@@ -5,7 +5,7 @@ export type Theme = (typeof THEME)[keyof typeof THEME];
 
 export type SectionWrapperProps = {
   id?: string;
-  title: string;
+  title: string | React.JSX.Element;
   children: React.ReactNode;
 };
 
