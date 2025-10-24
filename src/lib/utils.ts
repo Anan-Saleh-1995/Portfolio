@@ -27,4 +27,9 @@ export const TECH_STACK = {
   VERCEL: 'vercel',
   JIRA: 'jira',
   BITBUCKET: 'bitbucket',
+  TANSTACK: 'tanstack',
+  SUPABASE: 'supabase',
+  MANTINE: 'mantine',
+  AXIOS: 'axios',
+  API: 'api',
 } as const;
