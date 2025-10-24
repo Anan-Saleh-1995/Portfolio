@@ -55,15 +55,26 @@ export const projects = [
     github: 'https://github.com/Anan-Saleh-1995/Password-Generator',
     liveDemo: 'https://password-generator-self-tau.vercel.app/',
   },
-  // {
-  //   id: 2,
-  //   title: 'Movies App',
-  //   description: 'A Website for Movies and TV shows, users can add to their watchlist movies',
-  //   img: 'images/password-generator.png',
-  //   techStack: ['react', 'typescript', 'vite', 'shadcn', 'tailwind', 'vercel'],
-  //   github: 'https://github.com/Anan-Saleh-1995/Password-Generator',
-  //   liveDemo: 'https://password-generator-self-tau.vercel.app/',
-  // }
+  {
+    id: 2,
+    title: 'Filmify',
+    description: 'A Website for Movies and TV shows, users can sign up and save to their watchlist',
+    img: 'images/filmify.png',
+    techStack: [
+      TECH_STACK.VITE,
+      TECH_STACK.REACT,
+      TECH_STACK.TYPESCRIPT,
+      TECH_STACK.SUPABASE,
+      TECH_STACK.AXIOS,
+      TECH_STACK.API,
+      TECH_STACK.TANSTACK,
+      TECH_STACK.MANTINE,
+      TECH_STACK.GIT,
+      TECH_STACK.VERCEL,
+    ],
+    github: 'https://github.com/Anan-Saleh-1995/movie-website',
+    liveDemo: 'https://movie-website-sable-omega.vercel.app/',
+  }
 ];
 
 export const socials: SocialLink[] = [
